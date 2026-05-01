@@ -1,10 +1,21 @@
 import React from 'react';
 import './Analytics.css';
 import {
-  AreaChart, Area,
-  XAxis, YAxis, Tooltip, ResponsiveContainer,
-  PieChart, Pie, Cell, Legend
+  AreaChart,
+  Area,
+  XAxis,
+  YAxis,
+  Tooltip,
+  ResponsiveContainer,
+  PieChart,
+  Pie, Cell,
+  Legend,
 } from "recharts";
+
+import {
+  TrendingDown,
+  TrendingUp
+} from "lucide-react";
 
 const revenueData = [
   { month: "Jan", revenue: 125000, cost: 89000 },
@@ -79,10 +90,20 @@ export default function Analytics() {
               <XAxis dataKey="month" />
               <YAxis />
               <Tooltip />
-              <Area type="monotone" dataKey="revenue" stroke="#3b82f6" fill="#bfdbfe" strokeWidth={2} name="revenue" />
+              <Area type="monotone" dataKey="revenue" stroke="#3b82f6" fill="#bfdbfe" strokeWidth={2} name="revenue"/>
               <Area type="monotone" dataKey="cost" stroke="#f43f5e" fill="#fecdd3" strokeWidth={2} name="cost" />
             </AreaChart>
           </ResponsiveContainer>
+          <div className="legend">
+            <div className="legend-item">
+              <TrendingUp size={12} strokeWidth={2} color="#3b82f6" />
+              <span className="revenue">Revenue</span>
+            </div>
+            <div className="legend-item">
+              <TrendingDown size={12} strokeWidth={2} color="#f43f5e" />
+              <span className="cost">Cost</span>
+            </div>
+          </div>
         </div>
 
         <div className="chart-card">

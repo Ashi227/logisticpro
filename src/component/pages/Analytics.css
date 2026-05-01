@@ -108,3 +108,21 @@
   border-radius: 999px;
   transition: width 0.3s ease;
 }
+
+.legend {
+  display: flex;
+  gap: 12px;
+  margin-top: 16px;
+  margin-left: 300px;
+}
+
+.revenue { color: #3b82f6; }
+.cost { color: #f43f5e; }
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 17px;
+  color: #6b7280;
+}

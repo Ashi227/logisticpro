@@ -20,13 +20,13 @@ import {
 } from "lucide-react";
 
 const weeklyData = [
-  { day: "Mon", value: 45 },
-  { day: "Tue", value: 52 },
-  { day: "Wed", value: 48 },
-  { day: "Thu", value: 61 },
-  { day: "Fri", value: 55 },
-  { day: "Sat", value: 38 },
-  { day: "Sun", value: 28 }
+  { day: "Mon", orders: 45, shipments: 38 },
+  { day: "Tue", orders: 52, shipments: 42 },
+  { day: "Wed", orders: 48, shipments: 45 },
+  { day: "Thu", orders: 61, shipments: 51 },
+  { day: "Fri", orders: 55, shipments: 48 },
+  { day: "Sat", orders: 38, shipments: 35 },
+  { day: "Sun", orders: 28, shipments: 25 }
 ];
 
 const monthlyData = [
@@ -105,7 +105,8 @@ export default function Dashboard() {
               <XAxis dataKey="day" />
               <YAxis />
               <Tooltip />
-              <Bar dataKey="value" fill="#10b981" radius={[6, 6, 0, 0]} />
+              <Bar dataKey="orders" fill="#2f31af" radius={[6, 6, 0, 0]} />
+              <Bar dataKey="shipments" fill="#10b981" radius={[6, 6, 0, 0]} />
             </BarChart>
           </ResponsiveContainer>
         </div>
