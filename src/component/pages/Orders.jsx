@@ -8,9 +8,9 @@ const ordersData = [
     items: 12, total: 24580, priority: "High", status: "Pending",
     phone: "+63 912 345 6789", address: "123 Ayala Ave, Makati City, Metro Manila",
     products: [
-      { name: "Industrial Bearing Set",   qty: 5, price: 2450 },
-      { name: "Steel Cable Spool",        qty: 4, price: 1890 },
-      { name: "Safety Valve Kit",         qty: 3, price: 1580 },
+      { name: "Industrial Bearing Set", qty: 5, price: 2450 },
+      { name: "Steel Cable Spool", qty: 4, price: 1890 },
+      { name: "Safety Valve Kit", qty: 3, price: 1580 },
     ]
   },
   {
@@ -18,8 +18,8 @@ const ordersData = [
     items: 8, total: 15200, priority: "Medium", status: "Processing",
     phone: "+63 917 234 5678", address: "456 EDSA, Quezon City, Metro Manila",
     products: [
-      { name: "Hydraulic Pump Assembly",  qty: 3, price: 2800 },
-      { name: "Electric Motor 5HP",       qty: 5, price: 1640 },
+      { name: "Hydraulic Pump Assembly", qty: 3, price: 2800 },
+      { name: "Electric Motor 5HP", qty: 5, price: 1640 },
     ]
   },
   {
@@ -27,9 +27,9 @@ const ordersData = [
     items: 25, total: 42750, priority: "High", status: "Shipped",
     phone: "+63 918 765 4321", address: "789 Bonifacio Global City, Taguig",
     products: [
-      { name: "Industrial Bearing Set",   qty: 10, price: 2450 },
-      { name: "Hydraulic Pump Assembly",  qty: 8,  price: 2800 },
-      { name: "Belt (10m)",               qty: 7,  price: 950  },
+      { name: "Industrial Bearing Set", qty: 10, price: 2450 },
+      { name: "Hydraulic Pump Assembly", qty: 8, price: 2800 },
+      { name: "Belt (10m)", qty: 7, price: 950 },
     ]
   },
   {
@@ -37,8 +37,8 @@ const ordersData = [
     items: 6, total: 8900, priority: "Low", status: "Delivered",
     phone: "+63 920 111 2233", address: "321 Ortigas Ave, Pasig City",
     products: [
-      { name: "Safety Valve Kit",         qty: 4, price: 1580 },
-      { name: "Steel Cable Spool",        qty: 2, price: 890  },
+      { name: "Safety Valve Kit", qty: 4, price: 1580 },
+      { name: "Steel Cable Spool", qty: 2, price: 890 },
     ]
   },
   {
@@ -46,9 +46,9 @@ const ordersData = [
     items: 18, total: 31200, priority: "Medium", status: "Processing",
     phone: "+63 921 444 5566", address: "654 Shaw Blvd, Mandaluyong City",
     products: [
-      { name: "Electric Motor 5HP",       qty: 8,  price: 1640 },
-      { name: "Pneumatic Cylinder",       qty: 6,  price: 1700 },
-      { name: "Industrial Bearing Set",   qty: 4,  price: 2450 },
+      { name: "Electric Motor 5HP", qty: 8, price: 1640 },
+      { name: "Pneumatic Cylinder", qty: 6, price: 1700 },
+      { name: "Industrial Bearing Set", qty: 4, price: 2450 },
     ]
   },
   {
@@ -56,8 +56,8 @@ const ordersData = [
     items: 15, total: 28600, priority: "High", status: "Shipped",
     phone: "+63 922 777 8899", address: "987 Commonwealth Ave, Quezon City",
     products: [
-      { name: "Hydraulic Pump Assembly",  qty: 7,  price: 2800 },
-      { name: "Belt (10m)",               qty: 8,  price: 950  },
+      { name: "Hydraulic Pump Assembly", qty: 7, price: 2800 },
+      { name: "Belt (10m)", qty: 8, price: 950 },
     ]
   },
   {
@@ -65,9 +65,9 @@ const ordersData = [
     items: 10, total: 12450, priority: "Low", status: "Delivered",
     phone: "+63 923 000 1122", address: "147 Taft Ave, Pasay City",
     products: [
-      { name: "Safety Valve Kit",         qty: 5,  price: 1580 },
-      { name: "Steel Cable Spool",        qty: 3,  price: 890  },
-      { name: "Belt (10m)",               qty: 2,  price: 950  },
+      { name: "Safety Valve Kit", qty: 5, price: 1580 },
+      { name: "Steel Cable Spool", qty: 3, price: 890 },
+      { name: "Belt (10m)", qty: 2, price: 950 },
     ]
   },
 ];
@@ -86,10 +86,10 @@ export default function Orders() {
   );
 
   const counts = {
-    Pending:    data.filter(o => o.status === "Pending").length,
+    Pending: data.filter(o => o.status === "Pending").length,
     Processing: data.filter(o => o.status === "Processing").length,
-    Shipped:    data.filter(o => o.status === "Shipped").length,
-    Delivered:  data.filter(o => o.status === "Delivered").length,
+    Shipped: data.filter(o => o.status === "Shipped").length,
+    Delivered: data.filter(o => o.status === "Delivered").length,
   };
 
   return (
