@@ -9,7 +9,7 @@ import {
   Package
 } from "lucide-react";
 import "./SidebarNav.css";
-
+import logo from "../asset/logo.png";
 export default function Sidebar() {
   const location = useLocation();
 
@@ -27,7 +27,7 @@ export default function Sidebar() {
       {/* Logo */}
       <div className="sidebar-logo">
         <div className="logo-box">
-          <Package size={20} strokeWidth={2} />
+          <img src={logo} alt="LogisticsPro Logo" className="logo-img" />
         </div>
         <div>
           <h2 className="company">LogisticsPro</h2>
